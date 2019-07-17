@@ -119,7 +119,7 @@ Introducing the beautiful Miss Shannon! This gorgeous gal came to the shelter wh
   </script>
 </p>
 <p>
-  <button id="SOCIETY" onclick="myFunction()">The Anti-Cruelty Society</button>
+  <button id="SOCIETY" onclick="myFunction1()">The Anti-Cruelty Society</button>
 
 
   <p id="anti"></p>
@@ -134,7 +134,7 @@ Introducing the beautiful Miss Shannon! This gorgeous gal came to the shelter wh
   <p id="anti9"></p>
 
   <script>
-  function myFunction() {
+  function myFunction1() {
     document.getElementById("anti").innerHTML = "Address: 169 W Grand Ave, Chicago, IL 60654"
     document.getElementById("anti1").innerHTML = "Hours:"
     document.getElementById("anti2").innerHTML = "Monday 12pm to 7pm"
@@ -145,8 +145,36 @@ Introducing the beautiful Miss Shannon! This gorgeous gal came to the shelter wh
     document.getElementById("anti7").innerHTML = "Saturday	12am to 5pm"
     document.getElementById("anti8").innerHTML = "Sunday	12am to 5pm"
     document.getElementById("anti9").innerHTML = "Phone: (312)664-8338"
+    action()
   }
-}
+    
+  var hidden = false;
+  function1 action() {
+    hidden = !hidden;
+    if (hidden) {
+    document.getElementById("anti").style.visibility = 'hidden';
+    document.getElementById("anti1").style.visibility = 'hidden';
+    document.getElementById("anti2").style.visibility = 'hidden';
+    document.getElementById("anti3").style.visibility = 'hidden';
+    document.getElementById("anti4").style.visibility = 'hidden';
+    document.getElementById("anti5").style.visibility = 'hidden';
+    document.getElementById("anti6").style.visibility = 'hidden';
+    document.getElementById("anti7").style.visibility = 'hidden';
+    document.getElementById("anti8").style.visibility = 'hidden';
+    document.getElementById("anti9").style.visibility = 'hidden';
+    } else {
+    document.getElementById("anti").style.visibility = 'visible';
+    document.getElementById("anti1").style.visibility = 'visible';
+    document.getElementById("anti2").style.visibility = 'visible';
+    document.getElementById("anti3").style.visibility = 'visible';
+    document.getElementById("anti4").style.visibility = 'visible';
+    document.getElementById("anti5").style.visibility = 'visible';
+    document.getElementById("anti6").style.visibility = 'visible';
+    document.getElementById("anti7").style.visibility = 'visible';
+    document.getElementById("anti8").style.visibility = 'visible';
+    document.getElementById("anti9").style.visibility = 'visible';
+    }
+  }
 
 </script>
 </p>
